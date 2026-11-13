@@ -91,3 +91,4 @@
 .venv/
 __pycache__/
 *.pyc
+.DS*
