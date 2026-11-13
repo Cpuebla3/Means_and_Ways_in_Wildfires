@@ -10,6 +10,7 @@
 # Keep these tracked (minimal repo)
 ############################################
 !.gitignore
+!/AGENTS.md
 !README.md
 !requirements.txt
 !LICENSE
