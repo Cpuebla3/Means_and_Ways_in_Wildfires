@@ -1,0 +1,11 @@
+# Use LF for text files on macOS and Windows.
+* text=auto eol=lf
+
+# Check out Windows batch scripts with CRLF.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Preserve image and geospatial raster bytes.
+*.png  -text
+*.tif  -text
+*.tiff -text
