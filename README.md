@@ -2,6 +2,16 @@
 
 **ABM-MCTS-GPU-Framework** is a software framework that combines Agent-Based Modeling (ABM), Monte Carlo Tree Search (MCTS), and GPU acceleration using CUDA via CuPy. It simulates wildfire spread and suppression using aerial and ground firefighting agents. The core fire spread model calculations run on a GPU which enables the efficient simulations required for exploring a vast decision space in an uncertain environment.
 
+## Thesis workspace
+
+Open `PhD_Wildfire.code-workspace` to access the code repository and the two configured OneDrive roots. Configure their actual local paths separately on each machine.
+
+- `PHD_THESIS_FOLDER` is the active research and documentation root. Its `README.md` provides navigation to thesis writing, committee records, publications, research management and simulation resources under `DOCS_&_INFORMATION/`.
+- The active methodology workbooks are in `PHD_THESIS_FOLDER/DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Workbooks/`. Consult the methodology's `START_HERE.md`, Workbook 00 and the migration record before selecting a governing release.
+- `PHD THESIS PROCESS` is the legacy research-process root. Selected material was copied into the active root on 16 November 2026. The migration manifest records destinations and retained historical copies. Literature, `_1_OLDMATERIAL` and Mendeley information were excluded.
+- This repository contains the ABM–MCTS simulation environment. The historical partial Phase 1 scripts remain with their original workbook inputs under the methodology folder's `01_Phase_1/Supporting_Material/Code/`. Future Phase 1 development must use the approved workbook contracts and explicitly configured external roots.
+- Cristian deferred logbook reconciliation and relocation. Confirm the current logbook path and latest entries with him before updating it.
+
 ---
 
 ## 🔥 Framework Overview
