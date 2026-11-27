@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0.0",
+  "mission_id": "",
+  "fields": {
+    "MI-02": {
+      "status": "missing",
+      "value": null,
+      "refs": []
+    },
+    "MI-03": {
+      "status": "missing",
+      "value": null,
+      "refs": []
+    },
+    "MI-04": {
+      "status": "missing",
+      "value": null,
+      "refs": []
+    },
+    "MI-05": {
+      "status": "missing",
+      "value": null,
+      "refs": []
+    },
+    "MI-06": {
+      "status": "missing",
+      "value": null,
+      "refs": []
+    },
+    "MI-07": {
+      "status": "missing",
+      "value": null,
+      "refs": []
+    },
+    "MI-08": {
+      "status": "missing",
+      "value": null,
+      "refs": []
+    },
+    "MI-09": {
+      "status": "missing",
+      "value": null,
+      "refs": []
+    },
+    "MI-10": {
+      "status": "missing",
+      "value": null,
+      "refs": []
+    },
+    "MI-11": {
+      "status": "missing",
+      "value": null,
+      "refs": []
+    },
+    "MI-12": {
+      "status": "missing",
+      "value": null,
+      "refs": []
+    },
+    "MI-13": {
+      "status": "missing",
+      "value": null,
+      "refs": []
+    },
+    "MI-14": {
+      "status": "missing",
+      "value": null,
+      "refs": []
+    }
+  },
+  "area": {
+    "status": "missing",
+    "value": null,
+    "refs": []
+  },
+  "window": {
+    "status": "missing",
+    "value": null,
+    "refs": []
+  },
+  "fire_at_start": {
+    "status": "missing",
+    "value": null,
+    "refs": []
+  },
+  "assets": {
+    "status": "missing",
+    "value": null,
+    "refs": []
+  },
+  "tasks": [],
+  "notes": "",
+  "source_refs": [],
+  "criterion_scopes": [],
+  "case_obligations": []
+}

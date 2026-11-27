@@ -50,6 +50,10 @@
 # NEW FILES AND FOLDERS
 !Phase_1_Code_Development
 !Phase_1_Code_Development/*
+!Phase_1_Code_Development/steps_1_3/**
+Phase_1_Code_Development/steps_1_3/outputs/*
+!Phase_1_Code_Development/steps_1_3/outputs/esperanza-case.json
+!Phase_1_Code_Development/steps_1_3/outputs/esperanza-step3.json
 
 
 !/wind_schedule_esper_high.csv

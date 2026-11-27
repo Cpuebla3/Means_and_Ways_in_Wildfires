@@ -1,0 +1,3040 @@
+{
+  "schema_version": "1.0.0",
+  "mission_id": "EF-M-001",
+  "fields": {
+    "MI-02": {
+      "status": "known",
+      "value": "Monitor the known fire, detect qualifying new ignitions, suppress spread on segment Y, and protect the Doublewide and Octagon House.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ]
+    },
+    "MI-03": {
+      "status": "missing",
+      "value": null,
+      "refs": []
+    },
+    "MI-04": {
+      "status": "known",
+      "value": "Complex incident: major wind-driven fire with uncontrolled perimeter and coordinated interagency response before mission start.",
+      "refs": [
+        "EF-SRC-09",
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ]
+    },
+    "MI-05": {
+      "status": "known",
+      "value": "Limit fire spread through suppression on designated segment Y with concurrent dwelling protection.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ]
+    },
+    "MI-06": {
+      "status": "known",
+      "value": "Cabazon / Twin Pines, California",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ]
+    },
+    "MI-07": {
+      "status": "known",
+      "value": [
+        "WUI residential structures: Doublewide and Octagon House"
+      ],
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ]
+    },
+    "MI-08": {
+      "status": "known",
+      "value": "Spread limitation by suppression on designated segment Y.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ]
+    },
+    "MI-09": {
+      "status": "known",
+      "value": "06:00–12:00 PDT mission window. In-scope detections retain their individual deadlines.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ]
+    },
+    "MI-10": {
+      "status": "missing",
+      "value": null,
+      "refs": []
+    },
+    "MI-11": {
+      "status": "missing",
+      "value": null,
+      "refs": []
+    },
+    "MI-12": {
+      "status": "missing",
+      "value": null,
+      "refs": []
+    },
+    "MI-13": {
+      "status": "missing",
+      "value": null,
+      "refs": []
+    },
+    "MI-14": {
+      "status": "missing",
+      "value": null,
+      "refs": []
+    }
+  },
+  "area": {
+    "status": "known",
+    "value": {
+      "description": "Cabazon / Twin Pines, California",
+      "provisional_km2": 81.7,
+      "geometry_status": "unknown",
+      "suppression_segment": {
+        "name": "Y",
+        "geometry_status": "unknown"
+      }
+    },
+    "refs": [
+      "EF-ROW-03",
+      "EF-SRC-03"
+    ]
+  },
+  "window": {
+    "status": "known",
+    "value": {
+      "start": "2006-10-26T06:00:00-07:00",
+      "end": "2006-10-26T12:00:00-07:00",
+      "zone": "America/Los_Angeles"
+    },
+    "refs": [
+      "EF-HANDOFF-R3",
+      "EF-DECISIONS-20261118"
+    ]
+  },
+  "fire_at_start": {
+    "status": "known",
+    "value": {
+      "description": "Main Esperanza fire is known and burning at 06:00 PDT.",
+      "main_fire_known": true,
+      "perimeter_status": "unknown"
+    },
+    "refs": [
+      "EF-SRC-09",
+      "EF-HANDOFF-R3",
+      "EF-DECISIONS-20261118"
+    ]
+  },
+  "assets": {
+    "status": "known",
+    "value": [
+      {
+        "asset_id": "EF-DW",
+        "name": "Doublewide",
+        "type": "primary_dwelling"
+      },
+      {
+        "asset_id": "EF-OH",
+        "name": "Octagon House",
+        "type": "primary_dwelling"
+      }
+    ],
+    "refs": [
+      "EF-HANDOFF-R3",
+      "EF-DECISIONS-20261118"
+    ]
+  },
+  "tasks": [
+    {
+      "task_id": "EF-T-DET",
+      "function_id": "F-DET",
+      "description": "Detect qualifying new ignitions and spot fires within the search scope and event-entry window.",
+      "status": "active",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "dimension_ids": [
+        "D-DET-01",
+        "D-DET-02",
+        "D-DET-03",
+        "D-DET-04",
+        "D-DET-05"
+      ],
+      "asset_ids": []
+    },
+    {
+      "task_id": "EF-T-MON",
+      "function_id": "F-MON",
+      "description": "Observe the evolving known main fire and support operational decisions using fire-state information.",
+      "status": "active",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "dimension_ids": [
+        "D-MON-01",
+        "D-MON-02",
+        "D-MON-03",
+        "D-MON-04",
+        "D-MON-05"
+      ],
+      "asset_ids": []
+    },
+    {
+      "task_id": "EF-T-SUP",
+      "function_id": "F-SUP",
+      "description": "Deliver the required suppression effect on the designated segment Y.",
+      "status": "active",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "dimension_ids": [
+        "D-SUP-01",
+        "D-SUP-02",
+        "D-SUP-03",
+        "D-SUP-04",
+        "D-SUP-05",
+        "D-SUP-06"
+      ],
+      "asset_ids": []
+    },
+    {
+      "task_id": "EF-T-CON",
+      "function_id": "F-CON",
+      "description": "Confinement is outside this bounded demonstration.",
+      "status": "outside_scope",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "dimension_ids": [
+        "D-CON-01",
+        "D-CON-02",
+        "D-CON-03",
+        "D-CON-04",
+        "D-CON-05"
+      ],
+      "asset_ids": []
+    },
+    {
+      "task_id": "EF-T-PP",
+      "function_id": "F-PP",
+      "description": "Provide effective point protection at the Doublewide and Octagon House.",
+      "status": "active",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "dimension_ids": [
+        "D-PP-01",
+        "D-PP-02",
+        "D-PP-03",
+        "D-PP-04",
+        "D-PP-05"
+      ],
+      "asset_ids": [
+        "EF-DW",
+        "EF-OH"
+      ]
+    }
+  ],
+  "notes": "Bounded analytical demonstration near Cabazon and Twin Pines, California. The incident was reported at 01:11 PDT. The mission does not restart the known main fire’s detection clock.",
+  "source_refs": [
+    "EF-HANDOFF-R3",
+    "EF-DECISIONS-20261118",
+    "EF-SRC-09",
+    "EF-APP-20261126"
+  ],
+  "criterion_scopes": [
+    {
+      "context_id": "RCX-R-LD01-01-DET",
+      "status": "include",
+      "reason": "Source appendix row; see scoped criterion instances",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD01-01-DET"
+        }
+      ],
+      "instances": [
+        {
+          "criterion_instance_id": "EF-CI-LD01-01-CASE",
+          "target_id": "EF-CASE",
+          "spatial_scope": "EF search polygon",
+          "time_window": {
+            "start": "2006-10-26T06:00:00-07:00",
+            "end": "2006-10-26T12:00:00-07:00",
+            "zone": "America/Los_Angeles"
+          },
+          "metric_variable": "Conditional detection probability",
+          "population": "Qualifying new ignitions with a timely detection-capable observation opportunity.",
+          "activation": "include",
+          "condition": null,
+          "case_specification": {
+            "kind": "threshold",
+            "comparator": ">=",
+            "unit": "fraction",
+            "target": 0.95,
+            "reference_conditions": "≥0.95 within 25 min of each qualifying ignition. The clock includes obtaining an observation, recognizing the fire, and declaring it. Sensitivity at 25 min: 0.90 / 0.95 / 0.98. Separately, at 0.95: 15 / 25 / 30 min.",
+            "description": "Probability of correct recognition and declaration of a qualifying spot fire or new ignition by its deadline, given a timely observation opportunity.",
+            "source_display": "Reference · ≥0.95 within 25 min\nSensitivity · 0.90 / 0.95 / 0.98 at 25 min\n15 / 25 / 30 min at 0.95\nUnits · probability (0–1), min",
+            "substantiation": "EF-defined threshold and test settings. Field studies provide latency benchmarks with different clocks and fire populations.",
+            "source": {
+              "workbook": "EF-REFERENCE",
+              "version": "consolidated-20261124",
+              "filename": "EF_Consolidated_Capability_Measures.xlsx",
+              "table": "EFMeasures",
+              "key": "CB1 — Conditional detection probability R-LD01-01",
+              "thesis_relative_path": "DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Cases/EF/outputs/ef-measures-20261124/EF_Consolidated_Capability_Measures.xlsx",
+              "sheet": "Measures",
+              "row": 4
+            },
+            "authority_ref": "EF-APP-20261126",
+            "resolution_status": "authorized_case_setting",
+            "population": "Qualifying new ignitions with a timely detection-capable observation opportunity.",
+            "components": [
+              {
+                "field": "event_deadline",
+                "comparator": "<=",
+                "target": 25,
+                "unit": "min",
+                "reference": "ignition to declaration"
+              }
+            ],
+            "sensitivity": [
+              {
+                "field": "conditional_detection_probability",
+                "points": [
+                  0.9,
+                  0.95,
+                  0.98
+                ],
+                "unit": "fraction",
+                "held_fixed": {
+                  "event_deadline_min": 25
+                }
+              },
+              {
+                "field": "event_deadline",
+                "points": [
+                  15,
+                  25,
+                  30
+                ],
+                "unit": "min",
+                "held_fixed": {
+                  "conditional_detection_probability": 0.95
+                }
+              }
+            ],
+            "pending": "Qualifying event size/truth and observation-capability specification remain to be completed"
+          },
+          "refs": [
+            "EF-HANDOFF-R3",
+            "EF-DECISIONS-20261118",
+            "EF-APP-20261126",
+            "EF-ROW-01"
+          ],
+          "source": {
+            "workbook": "WB-03",
+            "version": "ver0004",
+            "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+            "table": "baseline_criterion_instances",
+            "key": "EF-CI-LD01-01-CASE"
+          },
+          "previous_case_source": {
+            "workbook": "EF-CASE",
+            "version": "ver0001",
+            "filename": "Case_EF_ver0001.xlsx",
+            "table": "case_acceptance",
+            "key": "EF-CA-EF-CI-LD01-01-CASE",
+            "thesis_relative_path": "DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Cases/EF/Case_EF_ver0001.xlsx"
+          }
+        }
+      ]
+    },
+    {
+      "context_id": "RCX-R-LD01-02-DET",
+      "status": "include",
+      "reason": "Source appendix row; see scoped criterion instances",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD01-02-DET"
+        }
+      ],
+      "instances": [
+        {
+          "criterion_instance_id": "EF-CI-LD01-02-CASE",
+          "target_id": "EF-CASE",
+          "spatial_scope": "EF search polygon",
+          "time_window": {
+            "start": "2006-10-26T06:00:00-07:00",
+            "end": "2006-10-26T12:00:00-07:00",
+            "zone": "America/Los_Angeles"
+          },
+          "metric_variable": "False actionable-alert rate",
+          "population": "Distinct false alerts at the verification or response stage.",
+          "activation": "include",
+          "condition": null,
+          "case_specification": {
+            "kind": "threshold",
+            "comparator": "<=",
+            "unit": "alerts/hour",
+            "target": 3,
+            "reference_conditions": "≤3 false actionable alerts per actual operating service-hour. Sensitivity ceilings: 1 / 2 / 3 per service-hour.",
+            "description": "Distinct false alerts reaching the designated verification or response stage per actual operating detection-service hour.",
+            "source_display": "Reference · ≤3 per operating service-hour\nSensitivity · 1 / 2 / 3 per service-hour\nUnits · alerts per service-hour",
+            "substantiation": "EF-defined verification workload ceiling. Its applicability depends on counting alerts at the designated actionable stage.",
+            "source": {
+              "workbook": "EF-REFERENCE",
+              "version": "consolidated-20261124",
+              "filename": "EF_Consolidated_Capability_Measures.xlsx",
+              "table": "EFMeasures",
+              "key": "CB1 — False actionable-alert rate R-LD01-02",
+              "thesis_relative_path": "DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Cases/EF/outputs/ef-measures-20261124/EF_Consolidated_Capability_Measures.xlsx",
+              "sheet": "Measures",
+              "row": 5
+            },
+            "authority_ref": "EF-APP-20261126",
+            "resolution_status": "authorized_case_setting",
+            "population": "Distinct false alerts at the verification or response stage.",
+            "sensitivity": [
+              {
+                "field": "false_actionable_alert_ceiling",
+                "points": [
+                  1,
+                  2,
+                  3
+                ],
+                "unit": "alerts/hour"
+              }
+            ],
+            "pending": "Verification workflow and representative service trials"
+          },
+          "refs": [
+            "EF-HANDOFF-R3",
+            "EF-DECISIONS-20261118",
+            "EF-APP-20261126",
+            "EF-ROW-02"
+          ],
+          "source": {
+            "workbook": "WB-03",
+            "version": "ver0004",
+            "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+            "table": "baseline_criterion_instances",
+            "key": "EF-CI-LD01-02-CASE"
+          },
+          "previous_case_source": {
+            "workbook": "EF-CASE",
+            "version": "ver0001",
+            "filename": "Case_EF_ver0001.xlsx",
+            "table": "case_acceptance",
+            "key": "EF-CA-EF-CI-LD01-02-CASE",
+            "thesis_relative_path": "DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Cases/EF/Case_EF_ver0001.xlsx"
+          }
+        }
+      ]
+    },
+    {
+      "context_id": "RCX-R-LD02-01-DET",
+      "status": "include",
+      "reason": "Source appendix row; see scoped criterion instances",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD02-01-DET"
+        }
+      ],
+      "instances": [
+        {
+          "criterion_instance_id": "EF-CI-LD02-01-CASE",
+          "target_id": "EF-CASE",
+          "spatial_scope": "EF search polygon",
+          "time_window": {
+            "start": "2006-10-26T06:00:00-07:00",
+            "end": "2006-10-26T12:00:00-07:00",
+            "zone": "America/Los_Angeles"
+          },
+          "metric_variable": "Detection-capable search coverage",
+          "population": null,
+          "activation": "conditional",
+          "condition": "An independent detection-capable spatial coverage floor is required.",
+          "case_specification": {
+            "kind": "threshold",
+            "comparator": ">=",
+            "unit": "fraction",
+            "target": 0.95,
+            "reference_conditions": "Use the provisional 81.7 km² search area and 06:00–12:00 PDT search window. If an independent spatial floor is required, use ≥95% as the proposed reference, equivalent to about 77.6 km². Sensitivity: 90 / 95 / 100% of the same polygon. Exact polygon geometry is pending.",
+            "description": "Unique area searched to the LD01 detectability standard within the search window, divided by the required search area. Count overlapping footprints once.",
+            "source_display": "Reference · ≥95% if the spatial floor applies (about 77.6 km² of 81.7 km²)\nSensitivity · 90 / 95 / 100%\nUnits · percent, km²",
+            "substantiation": "FireMapper imagery informs the case geography. The area and 95% floor are case assumptions. PG&E’s 90% viewshed target provides context for the lower sensitivity setting.",
+            "source": {
+              "workbook": "EF-REFERENCE",
+              "version": "consolidated-20261124",
+              "filename": "EF_Consolidated_Capability_Measures.xlsx",
+              "table": "EFMeasures",
+              "key": "CB2 — Detection-capable search coverage R-LD02-01",
+              "thesis_relative_path": "DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Cases/EF/outputs/ef-measures-20261124/EF_Consolidated_Capability_Measures.xlsx",
+              "sheet": "Measures",
+              "row": 6
+            },
+            "authority_ref": "EF-APP-20261126",
+            "resolution_status": "authorized_case_setting",
+            "condition": "An independent detection-capable spatial coverage floor is required.",
+            "components": [
+              {
+                "field": "provisional_search_area",
+                "target": 81.7,
+                "unit": "km2"
+              }
+            ],
+            "sensitivity": [
+              {
+                "field": "coverage_floor",
+                "points": [
+                  0.9,
+                  0.95,
+                  1.0
+                ],
+                "unit": "fraction"
+              }
+            ],
+            "pending": "Resolve the search polygon and whether the independent floor applies."
+          },
+          "refs": [
+            "EF-HANDOFF-R3",
+            "EF-DECISIONS-20261118",
+            "EF-APP-20261126",
+            "EF-ROW-03"
+          ],
+          "source": {
+            "workbook": "WB-03",
+            "version": "ver0004",
+            "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+            "table": "baseline_criterion_instances",
+            "key": "EF-CI-LD02-01-CASE"
+          },
+          "previous_case_source": {
+            "workbook": "EF-CASE",
+            "version": "ver0001",
+            "filename": "Case_EF_ver0001.xlsx",
+            "table": "case_acceptance",
+            "key": "EF-CA-EF-CI-LD02-01-CASE",
+            "thesis_relative_path": "DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Cases/EF/Case_EF_ver0001.xlsx"
+          }
+        }
+      ]
+    },
+    {
+      "context_id": "RCX-R-LD03-01-DET",
+      "status": "defer",
+      "reason": "Not selected by the 14 source rows; no inference of satisfaction or non-applicability. CB11 prioritization remains a separate review.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD03-01-DET"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD03-02-DET",
+      "status": "defer",
+      "reason": "Not selected by the 14 source rows; no inference of satisfaction or non-applicability. CB11 prioritization remains a separate review.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD03-02-DET"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD04-01-DET",
+      "status": "defer",
+      "reason": "Not selected by the 14 source rows; no inference of satisfaction or non-applicability. CB11 prioritization remains a separate review.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD04-01-DET"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD05-01-DET",
+      "status": "defer",
+      "reason": "Not selected by the 14 source rows; no inference of satisfaction or non-applicability. CB11 prioritization remains a separate review.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD05-01-DET"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD05-02-DET",
+      "status": "defer",
+      "reason": "Not selected by the 14 source rows; no inference of satisfaction or non-applicability. CB11 prioritization remains a separate review.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD05-02-DET"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD06-01-MON",
+      "status": "defer",
+      "reason": "Not selected by the 14 source rows; no inference of satisfaction or non-applicability. CB11 prioritization remains a separate review.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD06-01-MON"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD06-02-MON",
+      "status": "defer",
+      "reason": "Not selected by the 14 source rows; no inference of satisfaction or non-applicability. CB11 prioritization remains a separate review.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD06-02-MON"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD06-03-MON",
+      "status": "defer",
+      "reason": "Not selected by the 14 source rows; no inference of satisfaction or non-applicability. CB11 prioritization remains a separate review.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD06-03-MON"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD07-01-MON",
+      "status": "defer",
+      "reason": "Not selected by the 14 source rows; no inference of satisfaction or non-applicability. CB11 prioritization remains a separate review.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD07-01-MON"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD07-02-MON",
+      "status": "defer",
+      "reason": "Not selected by the 14 source rows; no inference of satisfaction or non-applicability. CB11 prioritization remains a separate review.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD07-02-MON"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD08-01-MON",
+      "status": "defer",
+      "reason": "Not selected by the 14 source rows; no inference of satisfaction or non-applicability. CB11 prioritization remains a separate review.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD08-01-MON"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD08-02-MON",
+      "status": "defer",
+      "reason": "Not selected by the 14 source rows; no inference of satisfaction or non-applicability. CB11 prioritization remains a separate review.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD08-02-MON"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD09-01-MON",
+      "status": "defer",
+      "reason": "Not selected by the 14 source rows; no inference of satisfaction or non-applicability. CB11 prioritization remains a separate review.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD09-01-MON"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD09-02-MON",
+      "status": "include",
+      "reason": "Source appendix row; see scoped criterion instances",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD09-02-MON"
+        }
+      ],
+      "instances": [
+        {
+          "criterion_instance_id": "EF-CI-LD09-02-CASE",
+          "target_id": "EF-CASE",
+          "spatial_scope": "Suppression segment Y (unresolved)",
+          "time_window": {
+            "start": "2006-10-26T06:00:00-07:00",
+            "end": "2006-10-26T12:00:00-07:00",
+            "zone": "America/Los_Angeles"
+          },
+          "metric_variable": "maximum absolute horizontal cross-edge position error",
+          "population": null,
+          "activation": "conditional",
+          "condition": "The reported active edge is used to place or redirect suppression on Y, and error could change the action.",
+          "case_specification": {
+            "kind": "threshold",
+            "comparator": "<=",
+            "unit": "m",
+            "target": 10,
+            "reference_conditions": "≤10 m where the reported edge determines suppression placement or redirection on Y and error could change the action. Identify the receiving decision and relevant part of Y. Sensitivity: 5 / 10 / 15 m.",
+            "description": "Maximum absolute horizontal cross-edge offset of the reported active fire edge from a reference for the same represented time, at the locations used by the decision.",
+            "source_display": "Reference · ≤10 m where applicable\nSensitivity · 5 / 10 / 15 m\nUnits · m",
+            "substantiation": "Proposed EF acceptance assumption. For the reference direct-use decision, 10 m of position error and 20 m of edge movement use a 30 m placement margin after allowing for execution error. These are analytical inputs. Mapping and aerial supervision sources support the relevance of edge position.",
+            "source": {
+              "workbook": "EF-REFERENCE",
+              "version": "consolidated-20261124",
+              "filename": "EF_Consolidated_Capability_Measures.xlsx",
+              "table": "EFMeasures",
+              "key": "CB3 — Fire-state variable error R-LD09-02 Conditional",
+              "thesis_relative_path": "DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Cases/EF/outputs/ef-measures-20261124/EF_Consolidated_Capability_Measures.xlsx",
+              "sheet": "Measures",
+              "row": 8
+            },
+            "authority_ref": "EF-APP-20261126",
+            "resolution_status": "authorized_case_setting",
+            "metric": "maximum absolute horizontal cross-edge position error",
+            "condition": "The reported active edge is used to place or redirect suppression on Y, and error could change the action.",
+            "sensitivity": [
+              {
+                "field": "maximum_cross_edge_error",
+                "points": [
+                  5,
+                  10,
+                  15
+                ],
+                "unit": "m"
+              }
+            ],
+            "pending": "Define the portion of Y, the receiving decision, and the reference edge at the same represented time."
+          },
+          "refs": [
+            "EF-HANDOFF-R3",
+            "EF-DECISIONS-20261118",
+            "EF-APP-20261126",
+            "EF-ROW-05"
+          ],
+          "source": {
+            "workbook": "WB-03",
+            "version": "ver0004",
+            "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+            "table": "baseline_criterion_instances",
+            "key": "EF-CI-LD09-02-CASE"
+          },
+          "previous_case_source": {
+            "workbook": "EF-CASE",
+            "version": "ver0001",
+            "filename": "Case_EF_ver0001.xlsx",
+            "table": "case_acceptance",
+            "key": "EF-CA-EF-CI-LD09-02-CASE",
+            "thesis_relative_path": "DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Cases/EF/Case_EF_ver0001.xlsx"
+          }
+        }
+      ]
+    },
+    {
+      "context_id": "RCX-R-LD09-03-MON",
+      "status": "defer",
+      "reason": "Not selected by the 14 source rows; no inference of satisfaction or non-applicability. CB11 prioritization remains a separate review.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD09-03-MON"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD10-01-MON",
+      "status": "defer",
+      "reason": "Not selected by the 14 source rows; no inference of satisfaction or non-applicability. CB11 prioritization remains a separate review.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD10-01-MON"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD10-02-MON",
+      "status": "defer",
+      "reason": "Not selected by the 14 source rows; no inference of satisfaction or non-applicability. CB11 prioritization remains a separate review.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD10-02-MON"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD11-01-SUP",
+      "status": "include",
+      "reason": "Source appendix row; see scoped criterion instances",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD11-01-SUP"
+        }
+      ],
+      "instances": [
+        {
+          "criterion_instance_id": "EF-CI-LD11-01-CASE",
+          "target_id": "EF-CASE",
+          "spatial_scope": "Suppression segment Y (unresolved)",
+          "time_window": {
+            "start": "2006-10-26T06:00:00-07:00",
+            "end": "2006-10-26T12:00:00-07:00",
+            "zone": "America/Los_Angeles"
+          },
+          "metric_variable": "Suppression-effect attainment",
+          "population": null,
+          "activation": "include",
+          "condition": null,
+          "case_specification": {
+            "kind": "threshold",
+            "comparator": ">=",
+            "unit": "fraction",
+            "target": 1,
+            "reference_conditions": "100% of Y at or below 1,000 kW/m. Hold Y and the required fraction fixed when testing 380 / 1,000 / 1,800 kW/m. Lower X is more demanding. Use the same Y for the linked CB5 checks. Geometry is pending.",
+            "description": "Percentage of the designated fire-edge segment length at or below residual fireline-intensity ceiling X.",
+            "source_display": "Reference · 100% of Y at ≤1,000 kW/m\nSensitivity · 380 / 1,000 / 1,800 kW/m at 100%\nUnits · percent of Y, kW/m",
+            "substantiation": "Published fireline-intensity breakpoints provide a scale for suppression difficulty. Their use as residual-effect ceilings and the 100% segment requirement are EF demonstration assumptions.",
+            "source": {
+              "workbook": "EF-REFERENCE",
+              "version": "consolidated-20261124",
+              "filename": "EF_Consolidated_Capability_Measures.xlsx",
+              "table": "EFMeasures",
+              "key": "CB5 — Suppression-effect attainment R-LD11-01",
+              "thesis_relative_path": "DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Cases/EF/outputs/ef-measures-20261124/EF_Consolidated_Capability_Measures.xlsx",
+              "sheet": "Measures",
+              "row": 11
+            },
+            "authority_ref": "EF-APP-20261126",
+            "resolution_status": "authorized_case_setting",
+            "components": [
+              {
+                "field": "residual_fireline_intensity",
+                "comparator": "<=",
+                "target": 1000,
+                "unit": "kW/m"
+              }
+            ],
+            "sensitivity": [
+              {
+                "field": "residual_fireline_intensity",
+                "points": [
+                  380,
+                  1000,
+                  1800
+                ],
+                "unit": "kW/m",
+                "held_fixed": {
+                  "segment_fraction": 1
+                }
+              }
+            ],
+            "pending": "Segment Y geometry and suppression-response model unresolved"
+          },
+          "refs": [
+            "EF-HANDOFF-R3",
+            "EF-DECISIONS-20261118",
+            "EF-APP-20261126",
+            "EF-ROW-08"
+          ],
+          "source": {
+            "workbook": "WB-03",
+            "version": "ver0004",
+            "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+            "table": "baseline_criterion_instances",
+            "key": "EF-CI-LD11-01-CASE"
+          },
+          "previous_case_source": {
+            "workbook": "EF-CASE",
+            "version": "ver0001",
+            "filename": "Case_EF_ver0001.xlsx",
+            "table": "case_acceptance",
+            "key": "EF-CA-EF-CI-LD11-01-CASE",
+            "thesis_relative_path": "DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Cases/EF/Case_EF_ver0001.xlsx"
+          }
+        }
+      ]
+    },
+    {
+      "context_id": "RCX-R-LD11-02-SUP",
+      "status": "defer",
+      "reason": "Not selected by the 14 source rows; no inference of satisfaction or non-applicability. CB11 prioritization remains a separate review.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD11-02-SUP"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD11-03-SUP",
+      "status": "defer",
+      "reason": "Not selected by the 14 source rows; no inference of satisfaction or non-applicability. CB11 prioritization remains a separate review.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD11-03-SUP"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD12-01-SUP",
+      "status": "defer",
+      "reason": "Not selected by the 14 source rows; no inference of satisfaction or non-applicability. CB11 prioritization remains a separate review.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD12-01-SUP"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD12-02-SUP",
+      "status": "defer",
+      "reason": "Not selected by the 14 source rows; no inference of satisfaction or non-applicability. CB11 prioritization remains a separate review.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD12-02-SUP"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD13-01-SUP",
+      "status": "defer",
+      "reason": "Not selected by the 14 source rows; no inference of satisfaction or non-applicability. CB11 prioritization remains a separate review.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD13-01-SUP"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD13-02-CON",
+      "status": "exclude",
+      "reason": "Confinement excluded by adopted case",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD13-02-CON"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD13-03-SUP",
+      "status": "defer",
+      "reason": "Not selected by the 14 source rows; no inference of satisfaction or non-applicability. CB11 prioritization remains a separate review.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD13-03-SUP"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD13-03-CON",
+      "status": "exclude",
+      "reason": "Confinement excluded by adopted case",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD13-03-CON"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD13-04-SUP",
+      "status": "defer",
+      "reason": "Not selected by the 14 source rows; no inference of satisfaction or non-applicability. CB11 prioritization remains a separate review.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD13-04-SUP"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD13-04-CON",
+      "status": "exclude",
+      "reason": "Confinement excluded by adopted case",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD13-04-CON"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD14-01-SUP",
+      "status": "include",
+      "reason": "Source appendix row; see scoped criterion instances",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD14-01-SUP"
+        }
+      ],
+      "instances": [
+        {
+          "criterion_instance_id": "EF-CI-LD14-01-CASE",
+          "target_id": "EF-CASE",
+          "spatial_scope": "Suppression segment Y (unresolved)",
+          "time_window": {
+            "start": "2006-10-26T06:00:00-07:00",
+            "end": "2006-10-26T12:00:00-07:00",
+            "zone": "America/Los_Angeles"
+          },
+          "metric_variable": "Maximum effective-delivery gap",
+          "population": null,
+          "activation": "conditional",
+          "condition": "The required effect on Y depends on repeated effective delivery.",
+          "case_specification": {
+            "kind": "threshold",
+            "comparator": "<=",
+            "unit": "min",
+            "target": 5,
+            "reference_conditions": "≤5 min wherever repeated delivery is needed. For the early-exposure reference test, maintain the required effect from 07:00–07:30 PDT, a 30-min interval. Sensitivity for the gap: 2 / 5 / 10 min. Count only actions contributing to the required effect on Y. A single lasting action can meet sustainment for the full interval.",
+            "description": "Longest time between effective suppression actions on Y when the required effect depends on repeated delivery.",
+            "source_display": "Reference · ≤5 min if repeat delivery is needed. Reference sustainment interval 30 min.\nSensitivity · 2 / 5 / 10 min for the gap\nUnits · min",
+            "substantiation": "Experimental mean hold of about 2 min and historical plain-water guidance of up to 5 min are context-specific anchors. The gap and sustainment interval are EF assumptions. The investigation supports the timing of the early-exposure test.",
+            "source": {
+              "workbook": "EF-REFERENCE",
+              "version": "consolidated-20261124",
+              "filename": "EF_Consolidated_Capability_Measures.xlsx",
+              "table": "EFMeasures",
+              "key": "CB5 — Maximum effective-delivery gap R-LD14-01 Conditional",
+              "thesis_relative_path": "DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Cases/EF/outputs/ef-measures-20261124/EF_Consolidated_Capability_Measures.xlsx",
+              "sheet": "Measures",
+              "row": 13
+            },
+            "authority_ref": "EF-APP-20261126",
+            "resolution_status": "authorized_case_setting",
+            "condition": "The required effect on Y depends on repeated effective delivery.",
+            "components": [
+              {
+                "field": "reference_sustainment_interval",
+                "start": "2006-10-26T07:00:00-07:00",
+                "end": "2006-10-26T07:30:00-07:00",
+                "duration": 30,
+                "unit": "min"
+              }
+            ],
+            "sensitivity": [
+              {
+                "field": "effective_delivery_gap",
+                "points": [
+                  2,
+                  5,
+                  10
+                ],
+                "unit": "min"
+              }
+            ],
+            "pending": "Determine the segment and applicability of repeated delivery for the selected Way."
+          },
+          "refs": [
+            "EF-HANDOFF-R3",
+            "EF-DECISIONS-20261118",
+            "EF-APP-20261126",
+            "EF-ROW-10"
+          ],
+          "source": {
+            "workbook": "WB-03",
+            "version": "ver0004",
+            "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+            "table": "baseline_criterion_instances",
+            "key": "EF-CI-LD14-01-CASE"
+          },
+          "previous_case_source": {
+            "workbook": "EF-CASE",
+            "version": "ver0001",
+            "filename": "Case_EF_ver0001.xlsx",
+            "table": "case_acceptance",
+            "key": "EF-CA-EF-CI-LD14-01-CASE",
+            "thesis_relative_path": "DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Cases/EF/Case_EF_ver0001.xlsx"
+          }
+        }
+      ]
+    },
+    {
+      "context_id": "RCX-R-LD14-02-SUP",
+      "status": "defer",
+      "reason": "Not selected by the 14 source rows; no inference of satisfaction or non-applicability. CB11 prioritization remains a separate review.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD14-02-SUP"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD15-01-SUP",
+      "status": "defer",
+      "reason": "Not selected by the 14 source rows; no inference of satisfaction or non-applicability. CB11 prioritization remains a separate review.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD15-01-SUP"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD15-02-SUP",
+      "status": "defer",
+      "reason": "Not selected by the 14 source rows; no inference of satisfaction or non-applicability. CB11 prioritization remains a separate review.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD15-02-SUP"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD16-01-SUP",
+      "status": "defer",
+      "reason": "Not selected by the 14 source rows; no inference of satisfaction or non-applicability. CB11 prioritization remains a separate review.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD16-01-SUP"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD16-02-SUP",
+      "status": "defer",
+      "reason": "Not selected by the 14 source rows; no inference of satisfaction or non-applicability. CB11 prioritization remains a separate review.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD16-02-SUP"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD17-01-PP",
+      "status": "include",
+      "reason": "Source appendix row; see scoped criterion instances",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD17-01-PP"
+        }
+      ],
+      "instances": [
+        {
+          "criterion_instance_id": "EF-CI-LD17-01-DW",
+          "target_id": "EF-DW",
+          "spatial_scope": "Doublewide, 15975 Gorgonio View Road",
+          "time_window": {
+            "start": "2006-10-26T06:00:00-07:00",
+            "end": "2006-10-26T12:00:00-07:00",
+            "zone": "America/Los_Angeles"
+          },
+          "metric_variable": "Asset protection effectiveness",
+          "population": null,
+          "activation": "include",
+          "condition": null,
+          "case_specification": {
+            "kind": "boolean",
+            "comparator": "==",
+            "unit": "boolean",
+            "target": true,
+            "reference_conditions": "0 established primary-dwelling fires across the 2 residences during their required intervals. Evaluate each dwelling and require success at both in the same realization.",
+            "description": "Whether wildfire exposure results in established fire in a primary dwelling, including combustion that persists or spreads through building materials or contents.",
+            "source_display": "Reference · 0 established fires across 2 dwellings\nSensitivity · None specified\nUnits · count",
+            "substantiation": "Zero established fires is an EF acceptance assumption. WUI research supports assessing flame, radiant heat, and ember exposure at each dwelling. Candidate outcomes require a defensible structure-response assessment.",
+            "source": {
+              "workbook": "EF-REFERENCE",
+              "version": "consolidated-20261124",
+              "filename": "EF_Consolidated_Capability_Measures.xlsx",
+              "table": "EFMeasures",
+              "key": "CB10 — Asset protection effectiveness R-LD17-01",
+              "thesis_relative_path": "DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Cases/EF/outputs/ef-measures-20261124/EF_Consolidated_Capability_Measures.xlsx",
+              "sheet": "Measures",
+              "row": 16
+            },
+            "authority_ref": "EF-APP-20261126",
+            "resolution_status": "authorized_case_setting",
+            "case_representation": "No established dwelling fire at each residence, both evaluated in the same realization.",
+            "components": [
+              {
+                "field": "established_primary_dwelling_fires",
+                "comparator": "==",
+                "target": 0,
+                "unit": "count",
+                "population": [
+                  "EF-DW",
+                  "EF-OH"
+                ]
+              }
+            ],
+            "decision_refs": [
+              "EF-DEC-010"
+            ],
+            "pending": "Defensible structure ignition/exposure-response model unavailable; outcome remains unresolved"
+          },
+          "refs": [
+            "EF-HANDOFF-R3",
+            "EF-DECISIONS-20261118",
+            "EF-APP-20261126",
+            "EF-ROW-13"
+          ],
+          "source": {
+            "workbook": "WB-03",
+            "version": "ver0004",
+            "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+            "table": "baseline_criterion_instances",
+            "key": "EF-CI-LD17-01-DW"
+          },
+          "previous_case_source": {
+            "workbook": "EF-CASE",
+            "version": "ver0001",
+            "filename": "Case_EF_ver0001.xlsx",
+            "table": "case_acceptance",
+            "key": "EF-CA-EF-CI-LD17-01-DW",
+            "thesis_relative_path": "DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Cases/EF/Case_EF_ver0001.xlsx"
+          }
+        },
+        {
+          "criterion_instance_id": "EF-CI-LD17-01-OH",
+          "target_id": "EF-OH",
+          "spatial_scope": "Octagon House, 15400 Gorgonio View Road",
+          "time_window": {
+            "start": "2006-10-26T06:00:00-07:00",
+            "end": "2006-10-26T12:00:00-07:00",
+            "zone": "America/Los_Angeles"
+          },
+          "metric_variable": "Asset protection effectiveness",
+          "population": null,
+          "activation": "include",
+          "condition": null,
+          "case_specification": {
+            "kind": "boolean",
+            "comparator": "==",
+            "unit": "boolean",
+            "target": true,
+            "reference_conditions": "0 established primary-dwelling fires across the 2 residences during their required intervals. Evaluate each dwelling and require success at both in the same realization.",
+            "description": "Whether wildfire exposure results in established fire in a primary dwelling, including combustion that persists or spreads through building materials or contents.",
+            "source_display": "Reference · 0 established fires across 2 dwellings\nSensitivity · None specified\nUnits · count",
+            "substantiation": "Zero established fires is an EF acceptance assumption. WUI research supports assessing flame, radiant heat, and ember exposure at each dwelling. Candidate outcomes require a defensible structure-response assessment.",
+            "source": {
+              "workbook": "EF-REFERENCE",
+              "version": "consolidated-20261124",
+              "filename": "EF_Consolidated_Capability_Measures.xlsx",
+              "table": "EFMeasures",
+              "key": "CB10 — Asset protection effectiveness R-LD17-01",
+              "thesis_relative_path": "DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Cases/EF/outputs/ef-measures-20261124/EF_Consolidated_Capability_Measures.xlsx",
+              "sheet": "Measures",
+              "row": 16
+            },
+            "authority_ref": "EF-APP-20261126",
+            "resolution_status": "authorized_case_setting",
+            "case_representation": "No established dwelling fire at each residence, both evaluated in the same realization.",
+            "components": [
+              {
+                "field": "established_primary_dwelling_fires",
+                "comparator": "==",
+                "target": 0,
+                "unit": "count",
+                "population": [
+                  "EF-DW",
+                  "EF-OH"
+                ]
+              }
+            ],
+            "decision_refs": [
+              "EF-DEC-010"
+            ],
+            "pending": "Defensible structure ignition/exposure-response model unavailable; outcome remains unresolved"
+          },
+          "refs": [
+            "EF-HANDOFF-R3",
+            "EF-DECISIONS-20261118",
+            "EF-APP-20261126",
+            "EF-ROW-13"
+          ],
+          "source": {
+            "workbook": "WB-03",
+            "version": "ver0004",
+            "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+            "table": "baseline_criterion_instances",
+            "key": "EF-CI-LD17-01-OH"
+          },
+          "previous_case_source": {
+            "workbook": "EF-CASE",
+            "version": "ver0001",
+            "filename": "Case_EF_ver0001.xlsx",
+            "table": "case_acceptance",
+            "key": "EF-CA-EF-CI-LD17-01-OH",
+            "thesis_relative_path": "DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Cases/EF/Case_EF_ver0001.xlsx"
+          }
+        }
+      ]
+    },
+    {
+      "context_id": "RCX-R-LD17-02-PP",
+      "status": "defer",
+      "reason": "Not selected by the 14 source rows; no inference of satisfaction or non-applicability. CB11 prioritization remains a separate review.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD17-02-PP"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD18-01-PP",
+      "status": "include",
+      "reason": "Source appendix row; see scoped criterion instances",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD18-01-PP"
+        }
+      ],
+      "instances": [
+        {
+          "criterion_instance_id": "EF-CI-LD18-01-DW",
+          "target_id": "EF-DW",
+          "spatial_scope": "Doublewide, 15975 Gorgonio View Road",
+          "time_window": {
+            "start": "2006-10-26T06:00:00-07:00",
+            "end": "2006-10-26T12:00:00-07:00",
+            "zone": "America/Los_Angeles"
+          },
+          "metric_variable": "Protection action-start time",
+          "population": null,
+          "activation": "include",
+          "condition": null,
+          "case_specification": {
+            "kind": "threshold",
+            "comparator": "<=",
+            "unit": "min",
+            "target": 30,
+            "reference_conditions": "Effective protection at the Doublewide and Octagon House by 06:45 PDT. For the preassigned reference run, assume 06:15 PDT release and allow ≤30 min per residence. For an alert-triggered Way, use its actual task release and the same 06:45 deadline.",
+            "description": "Time from task release to the start of effective protection at each residence, including travel and preparation. On-site Ways also require feasible access, deployment, and withdrawal.",
+            "source_display": "Reference · By 06:45 PDT at both residences, ≤30 min each for the reference release. Access feasibility where applicable.\nSensitivity · None specified\nUnits · PDT clock time, min, pass/fail",
+            "substantiation": "The investigation anchors the preparation period. The 06:15 common release and 06:45 deadline are case assumptions, giving a 30-min preparation allowance and a 15-min lead before the 07:00 exposure anchor.",
+            "source": {
+              "workbook": "EF-REFERENCE",
+              "version": "consolidated-20261124",
+              "filename": "EF_Consolidated_Capability_Measures.xlsx",
+              "table": "EFMeasures",
+              "key": "CB6 — Protection action-start time R-LD18-01, with asset access feasibility R-LD18-02 where applicable",
+              "thesis_relative_path": "DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Cases/EF/outputs/ef-measures-20261124/EF_Consolidated_Capability_Measures.xlsx",
+              "sheet": "Measures",
+              "row": 14
+            },
+            "authority_ref": "EF-APP-20261126",
+            "resolution_status": "authorized_case_setting",
+            "condition": "Use the 30 min allowance for the preassigned reference release at 06:15 PDT.",
+            "components": [
+              {
+                "field": "effective_protection_start",
+                "comparator": "<=",
+                "target": "2006-10-26T06:45:00-07:00",
+                "unit": "PDT clock time"
+              }
+            ],
+            "branches": [
+              {
+                "id": "preassigned_reference",
+                "release": "2006-10-26T06:15:00-07:00"
+              },
+              {
+                "id": "alert_triggered",
+                "release_status": "candidate_dependent",
+                "absolute_cutoff": "2006-10-26T06:45:00-07:00"
+              }
+            ],
+            "pending": "Provide the candidate-dependent release, travel and preparation basis for alert-triggered Ways."
+          },
+          "refs": [
+            "EF-HANDOFF-R3",
+            "EF-DECISIONS-20261118",
+            "EF-APP-20261126",
+            "EF-ROW-11"
+          ],
+          "source": {
+            "workbook": "WB-03",
+            "version": "ver0004",
+            "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+            "table": "baseline_criterion_instances",
+            "key": "EF-CI-LD18-01-DW"
+          },
+          "previous_case_source": {
+            "workbook": "EF-CASE",
+            "version": "ver0001",
+            "filename": "Case_EF_ver0001.xlsx",
+            "table": "case_acceptance",
+            "key": "EF-CA-EF-CI-LD18-01-DW",
+            "thesis_relative_path": "DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Cases/EF/Case_EF_ver0001.xlsx"
+          }
+        },
+        {
+          "criterion_instance_id": "EF-CI-LD18-01-OH",
+          "target_id": "EF-OH",
+          "spatial_scope": "Octagon House, 15400 Gorgonio View Road",
+          "time_window": {
+            "start": "2006-10-26T06:00:00-07:00",
+            "end": "2006-10-26T12:00:00-07:00",
+            "zone": "America/Los_Angeles"
+          },
+          "metric_variable": "Protection action-start time",
+          "population": null,
+          "activation": "include",
+          "condition": null,
+          "case_specification": {
+            "kind": "threshold",
+            "comparator": "<=",
+            "unit": "min",
+            "target": 30,
+            "reference_conditions": "Effective protection at the Doublewide and Octagon House by 06:45 PDT. For the preassigned reference run, assume 06:15 PDT release and allow ≤30 min per residence. For an alert-triggered Way, use its actual task release and the same 06:45 deadline.",
+            "description": "Time from task release to the start of effective protection at each residence, including travel and preparation. On-site Ways also require feasible access, deployment, and withdrawal.",
+            "source_display": "Reference · By 06:45 PDT at both residences, ≤30 min each for the reference release. Access feasibility where applicable.\nSensitivity · None specified\nUnits · PDT clock time, min, pass/fail",
+            "substantiation": "The investigation anchors the preparation period. The 06:15 common release and 06:45 deadline are case assumptions, giving a 30-min preparation allowance and a 15-min lead before the 07:00 exposure anchor.",
+            "source": {
+              "workbook": "EF-REFERENCE",
+              "version": "consolidated-20261124",
+              "filename": "EF_Consolidated_Capability_Measures.xlsx",
+              "table": "EFMeasures",
+              "key": "CB6 — Protection action-start time R-LD18-01, with asset access feasibility R-LD18-02 where applicable",
+              "thesis_relative_path": "DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Cases/EF/outputs/ef-measures-20261124/EF_Consolidated_Capability_Measures.xlsx",
+              "sheet": "Measures",
+              "row": 14
+            },
+            "authority_ref": "EF-APP-20261126",
+            "resolution_status": "authorized_case_setting",
+            "condition": "Use the 30 min allowance for the preassigned reference release at 06:15 PDT.",
+            "components": [
+              {
+                "field": "effective_protection_start",
+                "comparator": "<=",
+                "target": "2006-10-26T06:45:00-07:00",
+                "unit": "PDT clock time"
+              }
+            ],
+            "branches": [
+              {
+                "id": "preassigned_reference",
+                "release": "2006-10-26T06:15:00-07:00"
+              },
+              {
+                "id": "alert_triggered",
+                "release_status": "candidate_dependent",
+                "absolute_cutoff": "2006-10-26T06:45:00-07:00"
+              }
+            ],
+            "pending": "Provide the candidate-dependent release, travel and preparation basis for alert-triggered Ways."
+          },
+          "refs": [
+            "EF-HANDOFF-R3",
+            "EF-DECISIONS-20261118",
+            "EF-APP-20261126",
+            "EF-ROW-11"
+          ],
+          "source": {
+            "workbook": "WB-03",
+            "version": "ver0004",
+            "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+            "table": "baseline_criterion_instances",
+            "key": "EF-CI-LD18-01-OH"
+          },
+          "previous_case_source": {
+            "workbook": "EF-CASE",
+            "version": "ver0001",
+            "filename": "Case_EF_ver0001.xlsx",
+            "table": "case_acceptance",
+            "key": "EF-CA-EF-CI-LD18-01-OH",
+            "thesis_relative_path": "DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Cases/EF/Case_EF_ver0001.xlsx"
+          }
+        }
+      ]
+    },
+    {
+      "context_id": "RCX-R-LD18-02-PP",
+      "status": "include",
+      "reason": "Source appendix row; see scoped criterion instances",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD18-02-PP"
+        }
+      ],
+      "instances": [
+        {
+          "criterion_instance_id": "EF-CI-LD18-02-DW",
+          "target_id": "EF-DW",
+          "spatial_scope": "Doublewide, 15975 Gorgonio View Road",
+          "time_window": {
+            "start": "2006-10-26T06:00:00-07:00",
+            "end": "2006-10-26T12:00:00-07:00",
+            "zone": "America/Los_Angeles"
+          },
+          "metric_variable": "Asset access feasibility",
+          "population": null,
+          "activation": "conditional",
+          "condition": "The protection Way requires on-site access, deployment and withdrawal.",
+          "case_specification": {
+            "kind": "boolean",
+            "comparator": "TRUE",
+            "unit": "boolean",
+            "target": true,
+            "reference_conditions": "Every on-site Way requires feasible access, deployment and withdrawal at the specified dwelling.",
+            "description": "Time from task release to the start of effective protection at each residence, including travel and preparation. On-site Ways also require feasible access, deployment, and withdrawal.",
+            "source_display": "Reference · By 06:45 PDT at both residences, ≤30 min each for the reference release. Access feasibility where applicable.\nSensitivity · None specified\nUnits · PDT clock time, min, pass/fail",
+            "substantiation": "The investigation anchors the preparation period. The 06:15 common release and 06:45 deadline are case assumptions, giving a 30-min preparation allowance and a 15-min lead before the 07:00 exposure anchor.",
+            "source": {
+              "workbook": "EF-REFERENCE",
+              "version": "consolidated-20261124",
+              "filename": "EF_Consolidated_Capability_Measures.xlsx",
+              "table": "EFMeasures",
+              "key": "CB6 — Protection action-start time R-LD18-01, with asset access feasibility R-LD18-02 where applicable",
+              "thesis_relative_path": "DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Cases/EF/outputs/ef-measures-20261124/EF_Consolidated_Capability_Measures.xlsx",
+              "sheet": "Measures",
+              "row": 14
+            },
+            "authority_ref": "EF-APP-20261126",
+            "resolution_status": "authorized_case_setting",
+            "condition": "The protection Way requires on-site access, deployment and withdrawal.",
+            "pending": "Candidate-specific on-site applicability and access/safety evidence"
+          },
+          "refs": [
+            "EF-HANDOFF-R3",
+            "EF-DECISIONS-20261118",
+            "EF-APP-20261126",
+            "EF-ROW-11"
+          ],
+          "source": {
+            "workbook": "WB-03",
+            "version": "ver0004",
+            "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+            "table": "baseline_criterion_instances",
+            "key": "EF-CI-LD18-02-DW"
+          },
+          "previous_case_source": {
+            "workbook": "EF-CASE",
+            "version": "ver0001",
+            "filename": "Case_EF_ver0001.xlsx",
+            "table": "case_acceptance",
+            "key": "EF-CA-EF-CI-LD18-02-DW",
+            "thesis_relative_path": "DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Cases/EF/Case_EF_ver0001.xlsx"
+          }
+        },
+        {
+          "criterion_instance_id": "EF-CI-LD18-02-OH",
+          "target_id": "EF-OH",
+          "spatial_scope": "Octagon House, 15400 Gorgonio View Road",
+          "time_window": {
+            "start": "2006-10-26T06:00:00-07:00",
+            "end": "2006-10-26T12:00:00-07:00",
+            "zone": "America/Los_Angeles"
+          },
+          "metric_variable": "Asset access feasibility",
+          "population": null,
+          "activation": "conditional",
+          "condition": "The protection Way requires on-site access, deployment and withdrawal.",
+          "case_specification": {
+            "kind": "boolean",
+            "comparator": "TRUE",
+            "unit": "boolean",
+            "target": true,
+            "reference_conditions": "Every on-site Way requires feasible access, deployment and withdrawal at the specified dwelling.",
+            "description": "Time from task release to the start of effective protection at each residence, including travel and preparation. On-site Ways also require feasible access, deployment, and withdrawal.",
+            "source_display": "Reference · By 06:45 PDT at both residences, ≤30 min each for the reference release. Access feasibility where applicable.\nSensitivity · None specified\nUnits · PDT clock time, min, pass/fail",
+            "substantiation": "The investigation anchors the preparation period. The 06:15 common release and 06:45 deadline are case assumptions, giving a 30-min preparation allowance and a 15-min lead before the 07:00 exposure anchor.",
+            "source": {
+              "workbook": "EF-REFERENCE",
+              "version": "consolidated-20261124",
+              "filename": "EF_Consolidated_Capability_Measures.xlsx",
+              "table": "EFMeasures",
+              "key": "CB6 — Protection action-start time R-LD18-01, with asset access feasibility R-LD18-02 where applicable",
+              "thesis_relative_path": "DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Cases/EF/outputs/ef-measures-20261124/EF_Consolidated_Capability_Measures.xlsx",
+              "sheet": "Measures",
+              "row": 14
+            },
+            "authority_ref": "EF-APP-20261126",
+            "resolution_status": "authorized_case_setting",
+            "condition": "The protection Way requires on-site access, deployment and withdrawal.",
+            "pending": "Candidate-specific on-site applicability and access/safety evidence"
+          },
+          "refs": [
+            "EF-HANDOFF-R3",
+            "EF-DECISIONS-20261118",
+            "EF-APP-20261126",
+            "EF-ROW-11"
+          ],
+          "source": {
+            "workbook": "WB-03",
+            "version": "ver0004",
+            "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+            "table": "baseline_criterion_instances",
+            "key": "EF-CI-LD18-02-OH"
+          },
+          "previous_case_source": {
+            "workbook": "EF-CASE",
+            "version": "ver0001",
+            "filename": "Case_EF_ver0001.xlsx",
+            "table": "case_acceptance",
+            "key": "EF-CA-EF-CI-LD18-02-OH",
+            "thesis_relative_path": "DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Cases/EF/Case_EF_ver0001.xlsx"
+          }
+        }
+      ]
+    },
+    {
+      "context_id": "RCX-R-LD19-01-PP",
+      "status": "defer",
+      "reason": "Not selected by the 14 source rows; no inference of satisfaction or non-applicability. CB11 prioritization remains a separate review.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD19-01-PP"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD19-02-PP",
+      "status": "defer",
+      "reason": "Not selected by the 14 source rows; no inference of satisfaction or non-applicability. CB11 prioritization remains a separate review.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD19-02-PP"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD19-03-PP",
+      "status": "defer",
+      "reason": "Not selected by the 14 source rows; no inference of satisfaction or non-applicability. CB11 prioritization remains a separate review.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD19-03-PP"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD20-01-PP",
+      "status": "defer",
+      "reason": "Not selected by the 14 source rows; no inference of satisfaction or non-applicability. CB11 prioritization remains a separate review.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD20-01-PP"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD20-02-PP",
+      "status": "defer",
+      "reason": "Not selected by the 14 source rows; no inference of satisfaction or non-applicability. CB11 prioritization remains a separate review.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD20-02-PP"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD21-01-PP",
+      "status": "include",
+      "reason": "Source appendix row; see scoped criterion instances",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD21-01-PP"
+        }
+      ],
+      "instances": [
+        {
+          "criterion_instance_id": "EF-CI-LD21-01-DW",
+          "target_id": "EF-DW",
+          "spatial_scope": "Doublewide, 15975 Gorgonio View Road",
+          "time_window": {
+            "start": "2006-10-26T06:00:00-07:00",
+            "end": "2006-10-26T12:00:00-07:00",
+            "zone": "America/Los_Angeles"
+          },
+          "metric_variable": "Supported protection duration",
+          "population": null,
+          "activation": "include",
+          "condition": null,
+          "case_specification": {
+            "kind": "threshold",
+            "comparator": ">=",
+            "unit": "h",
+            "target": 1,
+            "reference_conditions": "Maintain adequate protection at each residence from 07:00 to 08:00 PDT, 1 h (60 min). Sensitivity: end at 08:00 / 08:15 / 08:30, giving 60 / 75 / 90 min. Record one criterion per residence, shared by CB8 and CB10.",
+            "description": "Time for which adequate protection can be maintained at each residence throughout its required exposure interval.",
+            "source_display": "Reference · 1 h (60 min) per residence\nSensitivity · 60 / 75 / 90 min\nUnits · h, min",
+            "substantiation": "The investigation anchors local exposure and access timing. NWCG guidance supports considering post-front exposure. The specified interval and sensitivity endpoints are case assumptions.",
+            "source": {
+              "workbook": "EF-REFERENCE",
+              "version": "consolidated-20261124",
+              "filename": "EF_Consolidated_Capability_Measures.xlsx",
+              "table": "EFMeasures",
+              "key": "CB8/CB10 — Supported protection duration R-LD21-01",
+              "thesis_relative_path": "DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Cases/EF/outputs/ef-measures-20261124/EF_Consolidated_Capability_Measures.xlsx",
+              "sheet": "Measures",
+              "row": 15
+            },
+            "authority_ref": "EF-APP-20261126",
+            "resolution_status": "authorized_case_setting",
+            "components": [
+              {
+                "field": "reference_exposure_interval",
+                "start": "2006-10-26T07:00:00-07:00",
+                "end": "2006-10-26T08:00:00-07:00"
+              }
+            ],
+            "sensitivity": [
+              {
+                "field": "supported_protection_duration",
+                "points": [
+                  1,
+                  1.25,
+                  1.5
+                ],
+                "unit": "h"
+              }
+            ],
+            "pending": "Protection adequacy and persistence model; same scoped instance serves CB8 and CB10"
+          },
+          "refs": [
+            "EF-HANDOFF-R3",
+            "EF-DECISIONS-20261118",
+            "EF-APP-20261126",
+            "EF-ROW-12"
+          ],
+          "source": {
+            "workbook": "WB-03",
+            "version": "ver0004",
+            "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+            "table": "baseline_criterion_instances",
+            "key": "EF-CI-LD21-01-DW"
+          },
+          "previous_case_source": {
+            "workbook": "EF-CASE",
+            "version": "ver0001",
+            "filename": "Case_EF_ver0001.xlsx",
+            "table": "case_acceptance",
+            "key": "EF-CA-EF-CI-LD21-01-DW",
+            "thesis_relative_path": "DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Cases/EF/Case_EF_ver0001.xlsx"
+          }
+        },
+        {
+          "criterion_instance_id": "EF-CI-LD21-01-OH",
+          "target_id": "EF-OH",
+          "spatial_scope": "Octagon House, 15400 Gorgonio View Road",
+          "time_window": {
+            "start": "2006-10-26T06:00:00-07:00",
+            "end": "2006-10-26T12:00:00-07:00",
+            "zone": "America/Los_Angeles"
+          },
+          "metric_variable": "Supported protection duration",
+          "population": null,
+          "activation": "include",
+          "condition": null,
+          "case_specification": {
+            "kind": "threshold",
+            "comparator": ">=",
+            "unit": "h",
+            "target": 1,
+            "reference_conditions": "Maintain adequate protection at each residence from 07:00 to 08:00 PDT, 1 h (60 min). Sensitivity: end at 08:00 / 08:15 / 08:30, giving 60 / 75 / 90 min. Record one criterion per residence, shared by CB8 and CB10.",
+            "description": "Time for which adequate protection can be maintained at each residence throughout its required exposure interval.",
+            "source_display": "Reference · 1 h (60 min) per residence\nSensitivity · 60 / 75 / 90 min\nUnits · h, min",
+            "substantiation": "The investigation anchors local exposure and access timing. NWCG guidance supports considering post-front exposure. The specified interval and sensitivity endpoints are case assumptions.",
+            "source": {
+              "workbook": "EF-REFERENCE",
+              "version": "consolidated-20261124",
+              "filename": "EF_Consolidated_Capability_Measures.xlsx",
+              "table": "EFMeasures",
+              "key": "CB8/CB10 — Supported protection duration R-LD21-01",
+              "thesis_relative_path": "DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Cases/EF/outputs/ef-measures-20261124/EF_Consolidated_Capability_Measures.xlsx",
+              "sheet": "Measures",
+              "row": 15
+            },
+            "authority_ref": "EF-APP-20261126",
+            "resolution_status": "authorized_case_setting",
+            "components": [
+              {
+                "field": "reference_exposure_interval",
+                "start": "2006-10-26T07:00:00-07:00",
+                "end": "2006-10-26T08:00:00-07:00"
+              }
+            ],
+            "sensitivity": [
+              {
+                "field": "supported_protection_duration",
+                "points": [
+                  1,
+                  1.25,
+                  1.5
+                ],
+                "unit": "h"
+              }
+            ],
+            "pending": "Protection adequacy and persistence model; same scoped instance serves CB8 and CB10"
+          },
+          "refs": [
+            "EF-HANDOFF-R3",
+            "EF-DECISIONS-20261118",
+            "EF-APP-20261126",
+            "EF-ROW-12"
+          ],
+          "source": {
+            "workbook": "WB-03",
+            "version": "ver0004",
+            "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+            "table": "baseline_criterion_instances",
+            "key": "EF-CI-LD21-01-OH"
+          },
+          "previous_case_source": {
+            "workbook": "EF-CASE",
+            "version": "ver0001",
+            "filename": "Case_EF_ver0001.xlsx",
+            "table": "case_acceptance",
+            "key": "EF-CA-EF-CI-LD21-01-OH",
+            "thesis_relative_path": "DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Cases/EF/Case_EF_ver0001.xlsx"
+          }
+        }
+      ]
+    },
+    {
+      "context_id": "RCX-R-LD21-02-PP",
+      "status": "defer",
+      "reason": "Not selected by the 14 source rows; no inference of satisfaction or non-applicability. CB11 prioritization remains a separate review.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD21-02-PP"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD22-01-CON",
+      "status": "exclude",
+      "reason": "Confinement excluded by adopted case",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD22-01-CON"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD22-02-CON",
+      "status": "exclude",
+      "reason": "Confinement excluded by adopted case",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD22-02-CON"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD22-03-CON",
+      "status": "exclude",
+      "reason": "Confinement excluded by adopted case",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD22-03-CON"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD23-01-CON",
+      "status": "exclude",
+      "reason": "Confinement excluded by adopted case",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD23-01-CON"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD23-02-CON",
+      "status": "exclude",
+      "reason": "Confinement excluded by adopted case",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD23-02-CON"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD24-01-CON",
+      "status": "exclude",
+      "reason": "Confinement excluded by adopted case",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD24-01-CON"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD24-02-CON",
+      "status": "exclude",
+      "reason": "Confinement excluded by adopted case",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD24-02-CON"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD24-03-CON",
+      "status": "exclude",
+      "reason": "Confinement excluded by adopted case",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD24-03-CON"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD25-01-CON",
+      "status": "exclude",
+      "reason": "Confinement excluded by adopted case",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD25-01-CON"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD25-02-CON",
+      "status": "exclude",
+      "reason": "Confinement excluded by adopted case",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD25-02-CON"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD25-03-CON",
+      "status": "exclude",
+      "reason": "Confinement excluded by adopted case",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD25-03-CON"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD25-04-CON",
+      "status": "exclude",
+      "reason": "Confinement excluded by adopted case",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD25-04-CON"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD05-03-DET",
+      "status": "defer",
+      "reason": "Not selected by the 14 source rows; no inference of satisfaction or non-applicability. CB11 prioritization remains a separate review.",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD05-03-DET"
+        }
+      ],
+      "instances": []
+    },
+    {
+      "context_id": "RCX-R-LD09-04-MON",
+      "status": "include",
+      "reason": "Source appendix row; see scoped criterion instances",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD09-04-MON"
+        }
+      ],
+      "instances": [
+        {
+          "criterion_instance_id": "EF-CI-LD09-04-CASE",
+          "target_id": "EF-CASE",
+          "spatial_scope": "Suppression segment Y (unresolved)",
+          "time_window": {
+            "start": "2006-10-26T06:00:00-07:00",
+            "end": "2006-10-26T12:00:00-07:00",
+            "zone": "America/Los_Angeles"
+          },
+          "metric_variable": "decision-use time minus represented state validity time",
+          "population": null,
+          "activation": "conditional",
+          "condition": "The fire-edge estimate is used in a decision on Y and its age can change that decision.",
+          "case_specification": {
+            "kind": "threshold",
+            "comparator": "<=",
+            "unit": "min",
+            "target": 5,
+            "reference_conditions": "≤5 min where aging can change the decision on Y. Use the same receiving decision as for the position-error check where both apply. Sensitivity: 1 / 5 / 10 min.",
+            "description": "Elapsed time from the time the fire-edge estimate represents to its actual use in the placement or redirection decision, including any wait after receipt.",
+            "source_display": "Reference · ≤5 min where applicable\nSensitivity · 1 / 5 / 10 min\nUnits · min",
+            "substantiation": "Proposed EF acceptance assumption. For direct use of an observed edge, an assumed 4 m/min of local motion consumes 20 m in 5 min. Published EF spread rates illustrate why this allowance must be checked for the selected segment. Official guidance supports accounting for delivery and use.",
+            "source": {
+              "workbook": "EF-REFERENCE",
+              "version": "consolidated-20261124",
+              "filename": "EF_Consolidated_Capability_Measures.xlsx",
+              "table": "EFMeasures",
+              "key": "CB3 — Fire-state information age at decision R-LD09-04 Conditional",
+              "thesis_relative_path": "DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Cases/EF/outputs/ef-measures-20261124/EF_Consolidated_Capability_Measures.xlsx",
+              "sheet": "Measures",
+              "row": 9
+            },
+            "authority_ref": "EF-APP-20261126",
+            "resolution_status": "authorized_case_setting",
+            "metric": "decision-use time minus represented state validity time",
+            "condition": "The fire-edge estimate is used in a decision on Y and its age can change that decision.",
+            "sensitivity": [
+              {
+                "field": "maximum_information_age",
+                "points": [
+                  1,
+                  5,
+                  10
+                ],
+                "unit": "min"
+              }
+            ],
+            "pending": "Identify the decision and the represented time of the information used."
+          },
+          "refs": [
+            "EF-HANDOFF-R3",
+            "EF-DECISIONS-20261118",
+            "EF-APP-20261126",
+            "EF-ROW-06"
+          ],
+          "source": {
+            "workbook": "WB-03",
+            "version": "ver0004",
+            "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+            "table": "baseline_criterion_instances",
+            "key": "EF-CI-LD09-04-CASE"
+          },
+          "previous_case_source": {
+            "workbook": "EF-CASE",
+            "version": "ver0001",
+            "filename": "Case_EF_ver0001.xlsx",
+            "table": "case_acceptance",
+            "key": "EF-CA-EF-CI-LD09-04-CASE",
+            "thesis_relative_path": "DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Cases/EF/Case_EF_ver0001.xlsx"
+          }
+        }
+      ]
+    },
+    {
+      "context_id": "RCX-R-LD11-04-SUP",
+      "status": "include",
+      "reason": "Source appendix row; see scoped criterion instances",
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_scope_review",
+          "key": "EF-SR-RCX-R-LD11-04-SUP"
+        }
+      ],
+      "instances": [
+        {
+          "criterion_instance_id": "EF-CI-LD11-04-CASE",
+          "target_id": "EF-CASE",
+          "spatial_scope": "Suppression segment Y (unresolved)",
+          "time_window": {
+            "start": "2006-10-26T06:00:00-07:00",
+            "end": "2006-10-26T12:00:00-07:00",
+            "zone": "America/Los_Angeles"
+          },
+          "metric_variable": "Time to required suppression effect",
+          "population": null,
+          "activation": "include",
+          "condition": null,
+          "case_specification": {
+            "kind": "threshold",
+            "comparator": "<=",
+            "unit": "min",
+            "target": 25,
+            "reference_conditions": "≤25 min from release and by 12:00 PDT. Sensitivity: 10 / 25 / 45 min, subject to the applicable cutoff. For the proposed 07:00 sustainment test, use 06:35 PDT release and require attainment by 07:00 PDT.",
+            "description": "Elapsed minutes from suppression task release to full attainment of R-LD11-01 on Y.",
+            "source_display": "Reference · ≤25 min from release and by 12:00 PDT.\nAttain the effect by 07:00 PDT for the 07:00–07:30 sustainment test.\nSensitivity · 10 / 25 / 45 min, subject to the applicable deadline\nUnits · min, PDT clock time",
+            "substantiation": "Modeled early EF spread informs the time scale. The elapsed limit and 06:35 release are demonstration assumptions. The release aligns the nominal attainment deadline with the start of the sustainment test.",
+            "source": {
+              "workbook": "EF-REFERENCE",
+              "version": "consolidated-20261124",
+              "filename": "EF_Consolidated_Capability_Measures.xlsx",
+              "table": "EFMeasures",
+              "key": "CB5 — Time to required suppression effect R-LD11-04",
+              "thesis_relative_path": "DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Cases/EF/outputs/ef-measures-20261124/EF_Consolidated_Capability_Measures.xlsx",
+              "sheet": "Measures",
+              "row": 12
+            },
+            "authority_ref": "EF-APP-20261126",
+            "resolution_status": "authorized_case_setting",
+            "components": [
+              {
+                "field": "absolute_cutoff",
+                "comparator": "<=",
+                "target": "2006-10-26T12:00:00-07:00",
+                "unit": "PDT clock time"
+              }
+            ],
+            "branches": [
+              {
+                "id": "sustainment_reference",
+                "release": "2006-10-26T06:35:00-07:00",
+                "absolute_cutoff": "2006-10-26T07:00:00-07:00",
+                "maintain_required_effect_through": "2006-10-26T07:30:00-07:00",
+                "sustainment_interval_min": 30,
+                "sustained_effect_requirement": "R-LD11-01"
+              }
+            ],
+            "sensitivity": [
+              {
+                "field": "elapsed_attainment_allowance",
+                "points": [
+                  10,
+                  25,
+                  45
+                ],
+                "unit": "min",
+                "held_fixed": {
+                  "general_cutoff": "2006-10-26T12:00:00-07:00"
+                }
+              }
+            ],
+            "pending": "Designate Y and obtain the actual task release for branches other than the reference sustainment run."
+          },
+          "refs": [
+            "EF-HANDOFF-R3",
+            "EF-DECISIONS-20261118",
+            "EF-APP-20261126",
+            "EF-ROW-09"
+          ],
+          "source": {
+            "workbook": "WB-03",
+            "version": "ver0004",
+            "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+            "table": "baseline_criterion_instances",
+            "key": "EF-CI-LD11-04-CASE"
+          },
+          "previous_case_source": {
+            "workbook": "EF-CASE",
+            "version": "ver0001",
+            "filename": "Case_EF_ver0001.xlsx",
+            "table": "case_acceptance",
+            "key": "EF-CA-EF-CI-LD11-04-CASE",
+            "thesis_relative_path": "DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Cases/EF/Case_EF_ver0001.xlsx"
+          }
+        }
+      ]
+    }
+  ],
+  "case_obligations": [
+    {
+      "obligation_id": "EF-OBL-001",
+      "name": "Shared timely observation opportunity",
+      "definition": "Fraction/probability of qualifying events receiving a detection-capable observation in time to allow correct declaration by the event deadline",
+      "dependency_id": "R-LD01-01",
+      "function_id": "F-DET",
+      "baseline_ids": [
+        "C_B,2",
+        "C_B,4"
+      ],
+      "membership_links": [
+        {
+          "membership_id": "EF-OM-001",
+          "obligation_id": "EF-OBL-001",
+          "baseline_id": "C_B,2",
+          "status": "shared single obligation"
+        },
+        {
+          "membership_id": "EF-OM-002",
+          "obligation_id": "EF-OBL-001",
+          "baseline_id": "C_B,4",
+          "status": "shared single obligation"
+        }
+      ],
+      "specification": {
+        "kind": "threshold",
+        "comparator": ">=",
+        "unit": "fraction",
+        "target": 0.98,
+        "reference_conditions": "≥0.98 for the same qualifying-event population as CB1. Record once and link to CB2 and CB4. Sensitivity: 0.95 / 0.98 / 0.99.",
+        "description": "Probability that a qualifying event receives a detection-capable observation at its location with enough time left for recognition and declaration by its own deadline.",
+        "source_display": "Reference · ≥0.98\nSensitivity · 0.95 / 0.98 / 0.99\nUnits · probability (0–1)",
+        "substantiation": "EF-defined event-based threshold. A timely opportunity can exist even if recognition or declaration fails. Probability assessment requires a justified event population and sampling or weighting basis.",
+        "source": {
+          "workbook": "EF-REFERENCE",
+          "version": "consolidated-20261124",
+          "filename": "EF_Consolidated_Capability_Measures.xlsx",
+          "table": "EFMeasures",
+          "key": "CB2/CB4 — Shared observation opportunity EF-OBL-001",
+          "thesis_relative_path": "DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Cases/EF/outputs/ef-measures-20261124/EF_Consolidated_Capability_Measures.xlsx",
+          "sheet": "Measures",
+          "row": 7
+        },
+        "authority_ref": "EF-APP-20261126",
+        "resolution_status": "authorized_case_setting",
+        "population": "The same qualifying-event population as CB1, including events with missed opportunities.",
+        "pending": "The event-population sampling or weighting basis and detectability standard remain open.",
+        "sensitivity": [
+          {
+            "field": "timely_observation_opportunity",
+            "points": [
+              0.95,
+              0.98,
+              0.99
+            ],
+            "unit": "fraction"
+          }
+        ]
+      },
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118",
+        "EF-APP-20261126",
+        "EF-DEC-005"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_case_obligations",
+          "key": "EF-OBL-001"
+        },
+        {
+          "workbook": "EF-REFERENCE",
+          "version": "consolidated-20261124",
+          "filename": "EF_Consolidated_Capability_Measures.xlsx",
+          "table": "EFMeasures",
+          "key": "CB2/CB4 — Shared observation opportunity EF-OBL-001",
+          "thesis_relative_path": "DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Cases/EF/outputs/ef-measures-20261124/EF_Consolidated_Capability_Measures.xlsx",
+          "sheet": "Measures",
+          "row": 7
+        }
+      ]
+    },
+    {
+      "obligation_id": "EF-OBL-002",
+      "name": "Detection-service persistence",
+      "definition": "Maintain service for event entry 06:00–12:00 PDT; each in-scope event retains the full 25 min clock, through 12:25 for the latest entry",
+      "dependency_id": "EF-OBL-001",
+      "function_id": "F-DET",
+      "baseline_ids": [
+        "C_B,4"
+      ],
+      "membership_links": [
+        {
+          "membership_id": "EF-OM-003",
+          "obligation_id": "EF-OBL-002",
+          "baseline_id": "C_B,4",
+          "status": "dependent profile"
+        }
+      ],
+      "specification": {
+        "kind": "service_profile",
+        "comparator": null,
+        "unit": "service profile",
+        "target": {
+          "entry_window": {
+            "start": "2006-10-26T06:00:00-07:00",
+            "end": "2006-10-26T12:00:00-07:00",
+            "zone": "America/Los_Angeles"
+          },
+          "deadline_min_from_each_ignition": 25,
+          "latest_reference_deadline": "2006-10-26T12:25:00-07:00"
+        },
+        "reference_conditions": "Event entry 06:00–12:00 PDT, with the full 25 min clock for each event. The latest reference deadline is 12:25 PDT for a noon ignition. A post-noon observation qualifies if it leaves enough time for declaration. Assess interruptions through EF-OBL-001 ≥0.98.",
+        "description": "Continuity of detection service sufficient to preserve timely observation opportunities for events entering scope.",
+        "source_display": "Reference · 06:00–12:00 PDT event entry, 25 min per event. Latest reference deadline 12:25 PDT.\nSensitivity · Follows CB1 deadline settings\nUnits · PDT clock time, min",
+        "substantiation": "EF-defined service window. The extension follows from the event clock. The shared observation-opportunity obligation supplies the criterion for assessing interruptions.",
+        "source": {
+          "workbook": "EF-REFERENCE",
+          "version": "consolidated-20261124",
+          "filename": "EF_Consolidated_Capability_Measures.xlsx",
+          "table": "EFMeasures",
+          "key": "CB4 — Detection-service persistence EF-OBL-002",
+          "thesis_relative_path": "DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Cases/EF/outputs/ef-measures-20261124/EF_Consolidated_Capability_Measures.xlsx",
+          "sheet": "Measures",
+          "row": 10
+        },
+        "authority_ref": "EF-APP-20261126",
+        "resolution_status": "authorized_case_setting",
+        "sensitivity_source": "R-LD01-01 event_deadline",
+        "pending": "Evaluate service interruptions using the event-based EF-OBL-001 assessment."
+      },
+      "refs": [
+        "EF-HANDOFF-R3",
+        "EF-DECISIONS-20261118",
+        "EF-APP-20261126",
+        "EF-DEC-005"
+      ],
+      "sources": [
+        {
+          "workbook": "WB-03",
+          "version": "ver0004",
+          "filename": "03-Baseline_Capability_Requirements_ver0004.xlsx",
+          "table": "ef_case_obligations",
+          "key": "EF-OBL-002"
+        },
+        {
+          "workbook": "EF-REFERENCE",
+          "version": "consolidated-20261124",
+          "filename": "EF_Consolidated_Capability_Measures.xlsx",
+          "table": "EFMeasures",
+          "key": "CB4 — Detection-service persistence EF-OBL-002",
+          "thesis_relative_path": "DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Cases/EF/outputs/ef-measures-20261124/EF_Consolidated_Capability_Measures.xlsx",
+          "sheet": "Measures",
+          "row": 10
+        }
+      ]
+    }
+  ],
+  "case_id": "EF",
+  "case_version": "ver0001",
+  "reference_scenario_id": "EF-S-001",
+  "source_artifacts": [
+    {
+      "id": "EF-CASE",
+      "path": "DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Cases/EF/Case_EF_ver0001.xlsx",
+      "sha256": "d7bcfa286e22ff19808985fb8f0fc99b05d08f075a423e895cfd6b30a1a6d61e"
+    },
+    {
+      "id": "EF-REFERENCE",
+      "path": "DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Cases/EF/outputs/ef-measures-20261124/EF_Consolidated_Capability_Measures.xlsx",
+      "sha256": "0ca35d14c4d68da461bc67a88201dd7dd9822c6ab33f976316b17a468f64e896"
+    }
+  ],
+  "approval_references": {
+    "EF-APP-20261126": "Cristian Puebla, 2026-11-26, this implementation conversation. Use the consolidated workbook values in the Esperanza demonstration."
+  },
+  "detection_test_design": {
+    "status": "design_recorded_test_population_unresolved",
+    "population": "Qualifying mission-relevant new ignitions or spot fires entering the analysis window and study area.",
+    "event_entry_window": {
+      "start": "2006-10-26T06:00:00-07:00",
+      "end": "2006-10-26T12:00:00-07:00",
+      "zone": "America/Los_Angeles"
+    },
+    "event_clock_start": "test ignition onset",
+    "event_clock_end": "correct detection-service recognition and declaration",
+    "eligibility": "Use a common fixed set, with declared locations, ignition times, detectability and placement conditions. If cases represent spot fires, place in eligible unburned fuel and exclude advance disclosure to alternatives.",
+    "sampling": "Any randomized extension needs a recorded seed and common event scenarios. Fixed test attainment alone does not estimate event-population probabilities.",
+    "pending": [
+      "Exact search geometry",
+      "Event inventory or sampling/weighting design",
+      "Qualifying event signature and matching rules",
+      "Observation detectability"
+    ],
+    "refs": [
+      "EF-DEC-004",
+      "EF-DEC-005",
+      "EF-ROW-01"
+    ]
+  },
+  "function_record_refs": [
+    {
+      "function_id": "F-DET",
+      "selection_id": "EF-F-DET",
+      "dimension_selection_ids": {
+        "D-DET-01": "EF-DS-D-DET-01",
+        "D-DET-02": "EF-DS-D-DET-02",
+        "D-DET-03": "EF-DS-D-DET-03",
+        "D-DET-04": "EF-DS-D-DET-04",
+        "D-DET-05": "EF-DS-D-DET-05"
+      },
+      "source": {
+        "workbook": "WB-02",
+        "version": "ver0004",
+        "filename": "02-Functions_and_Linked_Dimensions_ver0004.xlsx",
+        "table": "mission_selected_functions",
+        "key": "EF-F-DET"
+      }
+    },
+    {
+      "function_id": "F-MON",
+      "selection_id": "EF-F-MON",
+      "dimension_selection_ids": {
+        "D-MON-01": "EF-DS-D-MON-01",
+        "D-MON-02": "EF-DS-D-MON-02",
+        "D-MON-03": "EF-DS-D-MON-03",
+        "D-MON-04": "EF-DS-D-MON-04",
+        "D-MON-05": "EF-DS-D-MON-05"
+      },
+      "source": {
+        "workbook": "WB-02",
+        "version": "ver0004",
+        "filename": "02-Functions_and_Linked_Dimensions_ver0004.xlsx",
+        "table": "mission_selected_functions",
+        "key": "EF-F-MON"
+      }
+    },
+    {
+      "function_id": "F-SUP",
+      "selection_id": "EF-F-SUP",
+      "dimension_selection_ids": {
+        "D-SUP-01": "EF-DS-D-SUP-01",
+        "D-SUP-02": "EF-DS-D-SUP-02",
+        "D-SUP-03": "EF-DS-D-SUP-03",
+        "D-SUP-04": "EF-DS-D-SUP-04",
+        "D-SUP-05": "EF-DS-D-SUP-05",
+        "D-SUP-06": "EF-DS-D-SUP-06"
+      },
+      "source": {
+        "workbook": "WB-02",
+        "version": "ver0004",
+        "filename": "02-Functions_and_Linked_Dimensions_ver0004.xlsx",
+        "table": "mission_selected_functions",
+        "key": "EF-F-SUP"
+      }
+    },
+    {
+      "function_id": "F-CON",
+      "selection_id": "EF-F-CON",
+      "dimension_selection_ids": {
+        "D-CON-01": "EF-DS-D-CON-01",
+        "D-CON-02": "EF-DS-D-CON-02",
+        "D-CON-03": "EF-DS-D-CON-03",
+        "D-CON-04": "EF-DS-D-CON-04",
+        "D-CON-05": "EF-DS-D-CON-05"
+      },
+      "source": {
+        "workbook": "WB-02",
+        "version": "ver0004",
+        "filename": "02-Functions_and_Linked_Dimensions_ver0004.xlsx",
+        "table": "mission_selected_functions",
+        "key": "EF-F-CON"
+      }
+    },
+    {
+      "function_id": "F-PP",
+      "selection_id": "EF-F-PP",
+      "dimension_selection_ids": {
+        "D-PP-01": "EF-DS-D-PP-01",
+        "D-PP-02": "EF-DS-D-PP-02",
+        "D-PP-03": "EF-DS-D-PP-03",
+        "D-PP-04": "EF-DS-D-PP-04",
+        "D-PP-05": "EF-DS-D-PP-05"
+      },
+      "source": {
+        "workbook": "WB-02",
+        "version": "ver0004",
+        "filename": "02-Functions_and_Linked_Dimensions_ver0004.xlsx",
+        "table": "mission_selected_functions",
+        "key": "EF-F-PP"
+      }
+    }
+  ],
+  "class_record_ref": {
+    "workbook": "WB-01",
+    "version": "ver0002",
+    "filename": "01-Mission_Definition_and_Class_Selection_ver0002.xlsx",
+    "table": "mission_class_decisions",
+    "key": "EF-CD-001"
+  },
+  "supporting_roles": [
+    {
+      "role_id": "EF-DS-001",
+      "mission_id": "EF-M-001",
+      "role": "Decision support",
+      "canonical_function_id": null,
+      "treatment": "Supporting information/decision role; not a sixth canonical operational function or standalone capability criterion",
+      "evidence_ref": "EF-HANDOFF-R3; EF-DECISIONS-20261118",
+      "source": {
+        "workbook": "WB-02",
+        "version": "ver0004",
+        "filename": "02-Functions_and_Linked_Dimensions_ver0004.xlsx",
+        "table": "ef_supporting_roles",
+        "key": "EF-DS-001"
+      }
+    }
+  ],
+  "later_step_references": [
+    {
+      "step": 5,
+      "function_link_id": "FL-004",
+      "activation": "conditional",
+      "source_function_id": "F-DET",
+      "target_function_id": "F-PP",
+      "condition": "Actionable alert and usable fire location initiate the protection task.",
+      "case_settings": {
+        "protected_by": "2006-10-26T06:45:00-07:00",
+        "example_latest_receipt": "2006-10-26T06:15:00-07:00",
+        "example_receipt_to_effect_min": 30,
+        "rule": "Latest receipt equals the protection deadline minus actual time from receipt to effective protection.",
+        "required_payload": [
+          "alert timestamp",
+          "fire location relative to dwelling",
+          "known location uncertainty"
+        ]
+      },
+      "sources": [
+        {
+          "workbook": "WB-05",
+          "version": "ver0003",
+          "filename": "05-Operational_Function_Interactions_ver0003.xlsx",
+          "table": "function_links",
+          "key": "FL-004"
+        },
+        {
+          "workbook": "EF-REFERENCE",
+          "version": "consolidated-20261124",
+          "filename": "EF_Consolidated_Capability_Measures.xlsx",
+          "table": "EFMeasures",
+          "key": "Detection → Point Protection — Functional handoff FL-004 Conditional",
+          "thesis_relative_path": "DOCS_&_INFORMATION/Thesis_Methodology_Development_New/01_Phase_1/Cases/EF/outputs/ef-measures-20261124/EF_Consolidated_Capability_Measures.xlsx",
+          "sheet": "Measures",
+          "row": 17
+        }
+      ],
+      "refs": [
+        "EF-DEC-004",
+        "EF-APP-20261126"
+      ]
+    }
+  ]
+}

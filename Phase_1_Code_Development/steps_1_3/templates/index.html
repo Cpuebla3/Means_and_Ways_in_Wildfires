@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wildfire mission requirements</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+  <script src="{{ url_for('static', filename='app.js') }}" defer></script>
+</head>
+<body>
+  <header class="masthead">
+    <div class="shell heading">
+      <div>
+        <p class="release" id="release">{{ release }}</p>
+        <h1>Wildfire mission requirements</h1>
+      </div>
+      <label class="analyst">Analyst <input id="analyst" autocomplete="name" placeholder="Enter your name"></label>
+    </div>
+  </header>
+  <div class="shell">
+    <nav aria-label="Workflow steps">
+      <button type="button" data-tab="mission" aria-current="step">Mission input</button>
+      <button type="button" data-tab="classification">1 · Mission class</button>
+      <button type="button" data-tab="functions">2 · Functions and dimensions</button>
+      <button type="button" data-tab="baseline">3 · Baseline requirements</button>
+      <button type="button" data-tab="open-items">Open items <span id="open-count"></span></button>
+    </nav>
+    <main>
+      <div id="message" class="message" role="status" hidden></div>
+      <section id="mission" class="page">
+        <div class="section-head">
+          <h2>Mission input</h2>
+          <div class="actions">
+            <button id="load-template">New from template</button>
+            <button id="load-esperanza">Load Esperanza</button>
+            <button id="import-mission">Import mission JSON</button>
+            <input id="mission-file" type="file" accept=".json,application/json" hidden>
+            <button id="edit-json">Edit mission JSON</button>
+          </div>
+        </div>
+        <div id="mission-form"></div>
+        <button id="generate" class="primary">Generate proposals</button>
+      </section>
+      <section id="classification" class="page" hidden>
+        <h2>Mission class</h2>
+        <div id="class-result"></div>
+      </section>
+      <section id="functions" class="page" hidden>
+        <div class="section-head">
+          <h2>Functions and linked capability dimensions</h2>
+          <div class="actions">
+            <button data-batch="function">Retain routine function proposals</button>
+            <button data-batch="dimension">Retain routine dimension proposals</button>
+          </div>
+        </div>
+        <div id="function-result"></div>
+      </section>
+      <section id="baseline" class="page" hidden>
+        <div class="section-head">
+          <h2>Baseline requirements</h2>
+          <div class="actions">
+            <button data-batch="capability">Retain routine capabilities</button>
+            <button data-batch="measure">Retain routine measures</button>
+          </div>
+        </div>
+        <div class="controls">
+          <label>Filter requirements <input id="measure-search" type="search" placeholder="Capability, measure, or ID"></label>
+          <label><input type="checkbox" id="toggle-capability"> Capability definition</label>
+          <label><input type="checkbox" id="toggle-measure"> Measure definition</label>
+        </div>
+        <div id="baseline-result"></div>
+      </section>
+      <section id="open-items" class="page" hidden>
+        <h2>Open items</h2>
+        <div id="issues-result"></div>
+      </section>
+    </main>
+    <aside class="case-actions" aria-label="Case files">
+      <label>Case name <input id="case-name" placeholder="example-case" pattern="[a-z0-9][a-z0-9_-]{0,63}"></label>
+      <button id="save-case">Save case</button>
+      <label>Saved case <select id="saved-cases"><option value="">Select a saved case</option></select></label>
+      <button id="open-case">Reopen case</button>
+      <button id="export-case">Export Step 3 JSON</button>
+      <details id="release-notes"><summary>Source release</summary><div id="release-content"></div></details>
+    </aside>
+  </div>
+  <dialog id="review-dialog" aria-labelledby="review-title">
+    <form id="review-form">
+      <div class="section-head">
+        <h2 id="review-title"></h2>
+        <button type="button" data-close="review-dialog">Close</button>
+      </div>
+      <div id="review-detail"></div>
+      <div class="grid">
+        <label>Action
+          <select id="decision-action">
+            <option value="retain">Retain proposal</option>
+            <option value="revise">Revise</option>
+            <option value="reject">Reject</option>
+            <option value="defer">Defer</option>
+          </select>
+        </label>
+        <label>Condition, bound, or branch <input id="decision-condition"></label>
+        <label>Evidence quality <select id="evidence-quality"></select></label>
+        <label>Confidence <select id="confidence"></select></label>
+      </div>
+      <div id="revision-fields" hidden></div>
+      <label>Operational rationale <textarea id="rationale" rows="3"></textarea></label>
+      <label>Evidence references <textarea id="decision-evidence" rows="2" placeholder="One reference per line"></textarea></label>
+      <label>Authority or approval reference <input id="decision-authority"></label>
+      <details>
+        <summary>Uncertainty representation</summary>
+        <label>Uncertainty JSON
+          <textarea id="uncertainty" rows="4" placeholder='{"kind":"epistemic_unknown"}'></textarea>
+        </label>
+      </details>
+      <div id="review-message" class="message" role="status" hidden></div>
+      <button class="primary" type="submit">Record judgment</button>
+    </form>
+  </dialog>
+  <dialog id="json-dialog" aria-labelledby="json-title">
+    <form id="json-form">
+      <div class="section-head"><h2 id="json-title">Edit mission JSON</h2><button type="button" data-close="json-dialog">Close</button></div>
+      <label for="mission-json">Mission JSON</label>
+      <textarea id="mission-json" class="code" rows="24" required></textarea>
+      <div id="json-message" class="message" role="status" hidden></div>
+      <button class="primary" type="submit">Apply to mission form</button>
+    </form>
+  </dialog>
+</body>
+</html>
